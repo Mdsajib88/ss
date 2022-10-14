@@ -1,0 +1,24 @@
+fluidPlayer(
+   'my-video',
+    {
+        vastOptions: {
+            adList:                     {},
+            skipButtonCaption:          'Skip ad in [seconds]',
+            skipButtonClickCaption:     'Skip ad <span class="skip_button_icon"></span>',
+            adText:                     null,
+            adTextPosition:             'top left',
+            adCTAText:                  'Visit now!',
+            adCTATextPosition:          'bottom right',
+            vastTimeout:                5000,
+            showPlayButton:             false,
+            maxAllowedVastTagRedirects: 1,
+
+            vastAdvanced: {
+                vastLoadedCallback:       (function() {}),
+                noVastVideoCallback:      (function() {}),
+                vastVideoSkippedCallback: (function() {}),
+                vastVideoEndedCallback:   (function() {})
+            }
+        }
+    }
+);
